@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - ALANKRUTA</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/alpinejs" defer></script>
+</head>
+<body class="bg-orange-50 text-[#5a2a27]">
+  <header class="bg-[#8b0000] text-white p-4 sticky top-0 z-50">
+    <div class="flex justify-between items-center max-w-6xl mx-auto">
+      <div class="flex items-center gap-2">
+        <img src="https://photos.google.com/photo/AF1QipOR8Zq-ABZVdcYbdp5ikJ6XEY0Bk0O5xc3R0XgX" alt="Alankruta Logo" class="h-12">
+        <h1 class="text-2xl font-bold">ALANKRUTA</h1>
+      </div>
+      <nav>
+        <a href="index.html" class="mx-2 hover:underline">Home</a>
+        <a href="about.html" class="mx-2 hover:underline">About</a>
+        <a href="shop.html" class="mx-2 hover:underline">Shop</a>
+        <a href="#contact" class="mx-2 hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="py-12 bg-white" id="products">
+    <h2 class="text-3xl font-bold text-center mb-8">Shop Collection</h2>
+    <div class="relative max-w-5xl mx-auto overflow-hidden">
+      <div class="flex transition-transform duration-500" x-data="{ active: 0, total: 5 }" x-init="setInterval(() => active = (active + 1) % total, 5000)" :style="`transform: translateX(-${active * 100}%);`">
+
+        <!-- Product 1 -->
+        <div class="min-w-full p-4">
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <img src="https://photos.google.com/photo/AF1QipNl_1onCOAWvkCW4g_ntWbLeslK81Tn1hemR3HX" alt="Premium Reyon Kurti" class="w-full h-64 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-bold">Premium Reyon Kurti</h3>
+              <p>Beautiful Embroidery work<br>Sizes: M, L, XL, XXL<br><span class="text-red-600">*Chintamani color: XXL not available*</span></p>
+              <p class="text-green-700 font-bold mt-2">₹580/- Free shipping</p>
+              <p class="text-xs italic mt-1">Parcel opening video is must. Replacement only for defective items.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="min-w-full p-4">
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <img src="https://photos.google.com/photo/AF1QipPJNCxWx4mLE9Qzc2yccLJKu_YDycXOhPAa-gAF" alt="Gamthi Cotton Short Kurtis" class="w-full h-64 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-bold">Gamthi Work Cotton Kurtis</h3>
+              <p>Patch & Real Mirror Work<br>Height: 30.5 inches</p>
+              <p class="text-green-700 font-bold mt-2">₹530/- Free shipping</p>
+              <p class="text-xs italic mt-1">Parcel opening video is must. Replacement only for defective items.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="min-w-full p-4">
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <img src="https://photos.google.com/photo/AF1QipPblyrjApcIwOS0sp4tXUaEzFr917_vBIvnFTas" alt="Ajrakh Fabric" class="w-full h-64 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-bold">Ajrakh Natural Dye Fabric</h3>
+              <p>Pure Cotton 60x60 Count<br>Sizes: 2.5m, 5m, 10m<br>₹170/m + ₹80 shipping (up to 7m)</p>
+              <p class="text-xs italic mt-1">Parcel opening video is must. Replacement only for defective items.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="min-w-full p-4">
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <img src="https://photos.google.com/photo/AF1QipM7Yigk_U0l4LGlwPTf2gB4zoEi_wJ42eJsuIcK" alt="Festive Hand Purses" class="w-full h-64 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-bold">Festive Hand Purses</h3>
+              <p>Prints: Bandhani / Cow / Patola<br>Buy 2 at ₹380/- Free shipping</p>
+              <p class="text-xs italic mt-1">Parcel opening video is must. Replacement only for defective items.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="min-w-full p-4">
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <img src="https://photos.google.com/photo/AF1QipPgu0dl3CoFNC5R7Wq6SPaWGF9Gw44qiRh7RAOR" alt="Cotton Suit Combo" class="w-full h-64 object-cover">
+            <div class="p-4">
+              <h3 class="text-xl font-bold">Pure Cotton Suit Combo</h3>
+              <p>Top & Bottom 2.5m each<br>Bagru, Indigo Block Printed</p>
+              <p class="text-green-700 font-bold mt-2">₹750/- Free shipping</p>
+              <p class="text-xs italic mt-1">Parcel opening video is must. Replacement only for defective items.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+</body>
+</html>
