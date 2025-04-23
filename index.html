@@ -4,8 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ALANKRUTA</title>
+  <!-- Tailwind CSS and Alpine.js CDN Links -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/alpinejs" defer></script>
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
   <style>
     body {
@@ -22,14 +24,12 @@
       letter-spacing: .1em;
       animation: typing 5s steps(40, end) infinite, blink-caret .75s step-end infinite;
     }
-
     @keyframes typing {
       0% { width: 0 }
       40% { width: 100% }
       60% { width: 100% }
       100% { width: 0 }
     }
-
     @keyframes blink-caret {
       from, to { border-color: transparent }
       50% { border-color: white; }
@@ -42,14 +42,14 @@
   <header class="bg-[#8b0000] text-white p-4 sticky top-0 z-50">
     <div class="flex justify-between items-center max-w-6xl mx-auto">
       <div class="flex items-center gap-2">
-        <img src="https://i.ibb.co/gFMvSqcy/IMG-20250412-WA0008.jpg" alt="IMG-20250412-WA0008" border="0">
+        <img src="https://i.ibb.co/gFMvSqc/IMG-20250412-WA0008.jpg" alt="ALANKRUTA Logo" class="h-10 w-auto">
         <h1 class="text-2xl font-bold">ALANKRUTA</h1>
       </div>
       <nav>
         <a href="index.html" class="mx-2 hover:underline">Home</a>
-        <a href="About.html" class="mx-2 hover:underline">About</a>
-        <a href="Shop.html" class="mx-2 hover:underline">Shop</a>
-        <a href="Contact.html" class="mx-2 hover:underline">Contact</a>
+        <a href="about.html" class="mx-2 hover:underline">About</a>
+        <a href="shop.html" class="mx-2 hover:underline">Shop</a>
+        <a href="contact.html" class="mx-2 hover:underline">Contact</a>
       </nav>
     </div>
   </header>
@@ -69,26 +69,29 @@
     <a href="shop.html" class="mt-6 inline-block bg-[#8b0000] text-white px-6 py-3 rounded-full font-semibold hover:bg-red-800 transition">Shop Now</a>
   </section>
 
-  <!-- Preview of Shop Carousel -->
+  <!-- Popular Picks Section -->
   <section class="py-12 bg-white">
     <h2 class="text-3xl font-bold text-center mb-8">Popular Picks</h2>
     <div class="max-w-4xl mx-auto flex gap-6 overflow-x-auto px-4">
+      <!-- Product 1 -->
       <div class="min-w-[250px] bg-white rounded-xl shadow-lg overflow-hidden">
-       <img src="https://i.ibb.co/Gfv8fn7C/IMG-20250413-WA0006.jpg" alt="IMG-20250413-WA0006" border="0">
+        <img src="https://i.ibb.co/Gfv8fn7/IMG-20250413-WA0006.jpg" alt="Premium Reyon Kurti" class="w-full h-64 object-cover">
         <div class="p-4">
           <h3 class="font-semibold text-lg">Premium Reyon Kurti</h3>
           <p class="text-sm text-gray-600">₹580/- Free Shipping</p>
         </div>
       </div>
+      <!-- Product 2 -->
       <div class="min-w-[250px] bg-white rounded-xl shadow-lg overflow-hidden">
-        <img src="https://i.ibb.co/jPmrf3dV/IMG-20250415-WA0032.jpg" alt="IMG-20250415-WA0032" border="0">
+        <img src="https://i.ibb.co/jPmrf3d/IMG-20250415-WA0032.jpg" alt="Festive Hand Purses" class="w-full h-64 object-cover">
         <div class="p-4">
           <h3 class="font-semibold text-lg">Festive Hand Purses</h3>
           <p class="text-sm text-gray-600">2 for ₹380/- Free Shipping</p>
         </div>
       </div>
+      <!-- Product 3 -->
       <div class="min-w-[250px] bg-white rounded-xl shadow-lg overflow-hidden">
-       <img src="https://i.ibb.co/tprbHFxQ/IMG-20250415-WA0037.jpg" alt="IMG-20250415-WA0037" border="0">
+        <img src="https://i.ibb.co/tprbHFx/IMG-20250415-WA0037.jpg" alt="Cotton Suit Combo" class="w-full h-64 object-cover">
         <div class="p-4">
           <h3 class="font-semibold text-lg">Cotton Suit Combo</h3>
           <p class="text-sm text-gray-600">₹750/- Free Shipping</p>
